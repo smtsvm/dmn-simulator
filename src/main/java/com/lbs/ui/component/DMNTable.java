@@ -1,5 +1,6 @@
 package com.lbs.ui.component;
 
+import com.vaadin.shared.ui.grid.HeightMode;
 import com.vaadin.ui.Grid;
 
 /**
@@ -14,7 +15,9 @@ public class DMNTable extends Grid{
 
         setCaption("Dish");
         setColumnReorderingAllowed(true);
-
+        setWidth(100,Unit.PERCENTAGE);
+        setHeightMode(HeightMode.ROW);
+        setHeightByRows(5);
 
     }
 }

@@ -1,6 +1,7 @@
 package com.lbs.ui;
 
 import com.lbs.ui.component.MainLayout;
+import com.vaadin.annotations.Theme;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.spring.annotation.SpringUI;
 import com.vaadin.ui.Label;
@@ -10,6 +11,7 @@ import com.vaadin.ui.UI;
  * Created by Samet SEVİM on 7.10.2016.
  */
 @SpringUI(path="editor")
+@Theme("valo")
 public class VaadinUI extends UI{
 
     @Override

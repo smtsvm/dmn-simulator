@@ -1,5 +1,6 @@
 package com.lbs.ui.component;
 
+import com.vaadin.shared.ui.MarginInfo;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.HorizontalLayout;
 
@@ -13,9 +14,7 @@ public class HeaderLayout extends HorizontalLayout{
         Button downloadDmnButton = new Button("Download DMN Table");
 
         setSpacing(true);
-        setWidth(100,Unit.PERCENTAGE);
-        setMargin(true);
-
+        setMargin(new MarginInfo(true, false, false, false));
         uploadDmnButton.addClickListener(e->{
 
         });
@@ -23,5 +22,6 @@ public class HeaderLayout extends HorizontalLayout{
         downloadDmnButton.addClickListener(e->{
 
         });
+        addComponents(uploadDmnButton,downloadDmnButton);
     }
 }

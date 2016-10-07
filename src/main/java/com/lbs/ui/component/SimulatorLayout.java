@@ -8,13 +8,14 @@ import com.vaadin.ui.*;
 public class SimulatorLayout extends VerticalLayout{
 
     public SimulatorLayout(){
-
+        setWidth(100,Unit.PERCENTAGE);
         Button simulateButton = new Button("Simulate");
         addComponents(createFieldLayout(), simulateButton);
     }
 
     private HorizontalLayout createFieldLayout(){
         HorizontalLayout fieldLayout = new HorizontalLayout(createInputLayout(), createOutputLayout());
+        fieldLayout.setWidth(100,Unit.PERCENTAGE);
         fieldLayout.setSpacing(true);
         return fieldLayout;
     }

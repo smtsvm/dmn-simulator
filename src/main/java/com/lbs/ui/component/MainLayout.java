@@ -18,6 +18,7 @@ public class MainLayout extends VerticalLayout {
         contentLayout.addComponents(new HeaderLayout(), new DMNTable(), new SimulatorLayout());
         contentLayout.setSpacing(true);
         panel.setContent(contentLayout);
+        contentLayout.addStyleName(ValoTheme.LAYOUT_WELL);
         addComponent(panel);
         setComponentAlignment(panel, Alignment.TOP_CENTER);
 
